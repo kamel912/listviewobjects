@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/cars_bmw001"
+        android:id="@+id/object_image"
+        android:layout_alignParentTop="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/object_image"
+        android:layout_toEndOf="@+id/object_image"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/object_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/object_image"
+            android:layout_toRightOf="@+id/object_image"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="صيدلية الرحمة"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/object_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="شارع الجيش بجوار مستشفى العريش العام"
+        android:textSize="15sp"
+        android:textColor="@android:color/holo_purple"
+        android:layout_below="@+id/object_name"
+        android:gravity="right"
+        android:layout_toRightOf="@+id/object_image"
+        android:layout_toEndOf="@+id/object_image"
+            android:layout_weight="1"/>
+        <TextView
+        android:id="@+id/object_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0683351413"
+        android:textSize="20sp"
+        android:gravity="right"
+        android:layout_below="@+id/object_address"
+        android:layout_toRightOf="@+id/object_image"
+        android:layout_toEndOf="@+id/object_image"
+            android:layout_weight="1"/>
+
+        <RatingBar
+        android:id="@+id/object_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="3"
+        android:layout_alignBottom="@+id/object_image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/object_image"
+        android:layout_toEndOf="@+id/object_image"
+            android:layout_weight="1"/>
+
+
+</LinearLayout>
+
+</RelativeLayout>
